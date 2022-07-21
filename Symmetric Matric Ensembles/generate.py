@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mayavi import mlab
 from sklearn import datasets
 
-def generate_GOE(n=100, d=2)
+def generate_GOE(n=100, d=2):
     """
     Returns a sample of 'n' symmetric matrices ~ GOE(d,d)
 
@@ -27,7 +27,7 @@ def generate_GOE(n=100, d=2)
         matrix_samples.append(A)
     return matrix_samples
 
-def generate_uni(n, d, a, b)
+def generate_uni(n, d, a, b):
     """
 
     """
@@ -38,7 +38,7 @@ def generate_uni(n, d, a, b)
         matrix_samples.append(A)
     return matrix_samples   
 
-def generate_cgse(n, d, Phi)
+def generate_cgse(n, d, Phi):
     """
 
     """
