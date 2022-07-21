@@ -44,7 +44,7 @@ def generate_cgse(n, d, Phi)
     """
     matrix_samples = []
     for i in range(n):
-        X = np.random.multivariate_normal(mean=np.zeros(d**2),cov=phi)
+        X = np.random.multivariate_normal(mean=np.zeros(d**2), cov=Phi)
         B = X.reshape((d,d), order='F')
         A = (B+B.T)/2
         matrix_samples.append(A)
