@@ -21,7 +21,6 @@ def generate_GOE(n=100, d=2)
                    
     """
     matrix_samples = []
-    x = y = z = np.array([])
     for i in range(n):
         B = np.random.normal(size=(d, d))
         A = (B+B.T)/2
@@ -29,6 +28,24 @@ def generate_GOE(n=100, d=2)
     return matrix_samples
 
 def generate_uni(n, d, a, b)
-"""
+    """
 
-"""
+    """
+    matrix_samples = []
+    for i in range(n):
+        B = np.random.uniform(low=a, high=b, size=(d, d))
+        A = (B+B.T)/2
+        matrix_samples.append(A)
+    return matrix_samples   
+
+def generate_cgse(n, d, Phi)
+    """
+
+    """
+    matrix_samples = []
+    for i in range(n):
+        X = np.random.multivariate_normal(mean=np.zeros(d**2),cov=phi)
+        B = X.reshape((d,d), order='F')
+        A = (B+B.T)/2
+        matrix_samples.append(A)
+    return matrix_samples
