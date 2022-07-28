@@ -82,11 +82,11 @@ def matrix_viz(matrix_samples, fname='points.png'):
             z = np.append(z, matrix[1][1])
         mlab.points3d(x, y, z)
         mlab.view()
-        mlab.savefig(fname)
-    
+        mlab.savefig(fname) 
     else:
         # raise a system error that matrix visualization is not possible
-        pass    
+        pass  
+    
     return None
 
 
@@ -104,10 +104,10 @@ def eig_value_viz(eig_samples, fname):
         mlab.points3d(x, y, z)
         mlab.view()
         mlab.savefig(fname)
-    
     else:
         # raise a system error that matrix visualization is not possible
         pass    
+    
     return None
 
 
