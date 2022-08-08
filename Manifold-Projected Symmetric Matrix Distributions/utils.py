@@ -19,7 +19,7 @@ def gen_uniform(d):
 def exp_sigma(E, Sigma=None):
     if Sigma is None:
         Sigma = np.identity(np.shape(E)[0])
-    X = np.linalg.inv(Sigma) @ E
-    eigenvalues, P = np.linalg.eigh(X)
-    L = np.diag(np.exp(eigenvalues))
-    return Sigma @ P @ L @ P.T
+    X = np.linalg.solve(Sigma, E) # for general square matrices
+    D, V = np.linalg.eig(X)
+    L = np.diag(np.exp(D))
+    return Sigma @ V @ L @ np.linalg.inv(V)
