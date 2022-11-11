@@ -12,8 +12,8 @@ def gen_CGSE(d, Phi):
     B = X.reshape((d, d), order='F')
     return (B + B.T) / 2
 
-def gen_uniform(d):
-    B = np.random.uniform(low=-1, high=1, size=(d, d))
+def gen_uniform(d, r=1):
+    B = np.random.uniform(low=-r, high=r, size=(d, d))
     return (B + B.T) / 2
 
 def exp_sigma(E, Sigma=None):
