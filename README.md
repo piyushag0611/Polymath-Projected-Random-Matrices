@@ -1,2 +1,3 @@
 # Polymath-Projected-Random-Matrices
 
+This project was conceived under the Polymath Jr. Program, under Aimee Maurais and David Gomez (graduate students at MIT and Georgia Tech respectively), we were a bunch of about 10 undergraduate students working. The work was presented in the Joint Mathematical meetings at Boston by team mates Sean Cottrell and Yi Luo. The project comprised of generating random symmetric matrices, writing down joint element and eigen value density. Exponentiating these matrices as a way of generating symmetric positive definite matrices. Lastly, we looked at how these matrices could be used in solving linear inverse problems
